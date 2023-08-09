@@ -1,0 +1,21 @@
+.cart-backgr {
+    background-image: url(img/h2_hero2.jpg.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.cart-caption h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.media img {
+    padding-right: 30px;
+}
+
+td {
+    vertical-align: middle;
+}

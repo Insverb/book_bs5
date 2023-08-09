@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row align-items-center header-top">
+                <div class="col-xl-4">
+                    <div class="logo">
+                        <a href="index.html"><img src="img/logo.png.webp"></a>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="form">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-4">
+                    <div class="header-right">
+                        <ul class="d-flex align-items-center justify-content-end">
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Track Order</a></li>
+                            <li><a href="#"><i class="fa-solid fa-basket-shopping nav-icon"></i></a></li>
+                            <li><a class='btn my-btn' href="login.html">Sign in</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary nav-bg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars nav-icon"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-lg-0 nav-color">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Cart</a></li>
+                                <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                <li><a class="dropdown-item" href="#">Book Details</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Details</a></li>
+                                <li><a class="dropdown-item" href="#">Element</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="carousel-section">
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="slider-image flex-center">
+                                <div class="slider-content animate__animated animate__backInDown">
+                                    <h2>The History of Phipino</h2>
+                                    <a class="btn slide-btn" href="index.html">Browse store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="slider-image img-2 flex-center">
+                                <div class="slider-content animate__animated animate__backInUp">
+                                    <h2>The History of Phipino</h2>
+                                    <a class="btn slide-btn" href="index.html">Browse store</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item ">
+                            <div class="slider-image img-3 flex-center">
+                                <div class="slider-content animate__animated animate__backInLeft">
+                                    <h2 class='animate__animated animate__backInDown'>The History of Phipino</h2>
+                                    <a class="btn slide-btn" href="index.html">Browse store</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="text-center swiper-title">Best Selling Books Ever</h2>
+                <div class="swiper swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling1.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling2.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling3.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling4.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling5.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling6.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling1.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling2.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling3.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling4.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling5.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="slide-img" src="img/best_selling6.jpg.webp">
+                            <h5 class="slide-title"><a class="slide-link-h" href="#">Moon Dance</a></h5>
+                            <p>J. R Rain</p>
+                            <div class="slide-footer d-flex justify-content-between align-items-end">
+                                <div class="review">
+                                    <div>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star review-i"></i>
+                                        <i class="fa-solid fa-star-half review-i"></i>
+                                    </div>
+                                    <div>
+                                        <span>(120 Review)</span>
+                                    </div>
+                                </div>
+                                <div class="price">
+                                    <span>50$</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+        <div class="featured-this-week">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-9 bg-red">
+                        <div class="row bg-white">
+                            <div class="col-xl-12 d-flex justify-content-between align-items-center featured-this-week-title">
+                                <h2>Featured This Week</h2>
+                                <a href="#">View all</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="swiper swiper2">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide d-flex justify-content-start align-items-center card1">
+                                            <div class="card-img-slide">
+                                                <img src="img/best-books1.jpg.webp">
+                                            </div>
+                                            <div class="align-self-start card-caption">
+                                                <h2>The Rage of Dragons</h2>
+                                                <p>By Evan Winter</p>
+                                                <div class="card-price">
+                                                    <span>50.00$</span>
+                                                </div>
+                                                <div class="card-review">
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star-half review-i"></i>
+                                                        <p>(120 Review)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide d-flex justify-content-start align-items-center card1">
+                                            <div class="card-img-slide">
+                                                <img src="img/best-books1.jpg.webp">
+                                            </div>
+                                            <div class="align-self-start card-caption">
+                                                <h2>The Rage of Dragons</h2>
+                                                <p>By Evan Winter</p>
+                                                <div class="card-price">
+                                                    <span>50.00$</span>
+                                                </div>
+                                                <div class="card-review">
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star-half review-i"></i>
+                                                        <p>(120 Review)</p>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide d-flex justify-content-start align-items-center card1">
+                                            <div class="card-img-slide">
+                                                <img src="img/best-books1.jpg.webp">
+                                            </div>
+                                            <div class="align-self-start card-caption">
+                                                <h2>The Rage of Dragons</h2>
+                                                <p>By Evan Winter</p>
+                                                <div class="card-price">
+                                                    <span>50.00$</span>
+                                                </div>
+                                                <div class="card-review">
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star-half review-i"></i>
+                                                        <p>(120 Review)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide d-flex justify-content-start align-items-center card1">
+                                            <div class="card-img-slide">
+                                                <img src="img/best-books1.jpg.webp">
+                                            </div>
+                                            <div class="align-self-start card-caption">
+                                                <h2>The Rage of Dragons</h2>
+                                                <p>By Evan Winter</p>
+                                                <div class="card-price">
+                                                    <span>50.00$</span>
+                                                </div>
+                                                <div class="card-review">
+                                                    <div class="rating">
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star review-i"></i>
+                                                        <i class="fa-solid fa-star-half review-i"></i>
+                                                        <p>(120 Review)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 align-self-end">
+                        <div class="featured-this-week-right">
+                            <img class="w-100" src="img/ad.jpg.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-published-items">
+            <div class="container">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-xl-5">
+                        <div>
+                            <h2>Latest Published items</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <ul class="nav nav-pills justify-content-end align-items-end tabs1" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">All</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-horror-tab" data-bs-toggle="pill" data-bs-target="#pills-horror" type="button" role="tab" aria-controls="pills-horror" aria-selected="false">Horror</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-thriller-tab" data-bs-toggle="pill" data-bs-target="#pills-thriller" type="button" role="tab" aria-controls="pills-thriller" aria-selected="false">Thriller</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-science-tab" data-bs-toggle="pill" data-bs-target="#pills-science-fiction" type="button" role="tab" aria-controls="pills-science" aria-selected="false">Science Fiction</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">History</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row justify-content-between align-items-center my-tabs">
+                    <div class="col-xl-12">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling1.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling2.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling4.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-horror" role="tabpanel" aria-labelledby="pills-horror-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling1.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling1.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling1.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-thriller" role="tabpanel" aria-labelledby="pills-thriller-tab" tabindex="0">
+                                <div class="row">
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling6.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-science-fiction" role="tabpanel" aria-labelledby="pills-science-fiction" tabindex="0">
+                                <div class="row">
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling5.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history" tabindex="0">
+                                <div class="row">
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 my-tabs-card">
+                                        <div class="tab-card-content">
+                                            <div class="card-img">
+                                                <img src="img/best_selling3.jpg.webp">
+                                            </div>
+                                            <div class="tab-content-caption">
+                                                <h5 class="slide-title">Moon Dance</h5>
+                                                <p>J. R Rain</p>
+                                                <div class="slide-footer d-flex justify-content-between align-items-end">
+                                                    <div class="review">
+                                                        <div>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star review-i"></i>
+                                                            <i class="fa-solid fa-star-half review-i"></i>
+                                                        </div>
+                                                        <div>
+                                                            <span>(120 Review)</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="price">
+                                                        <span>50$</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-xl-6">
+                    <div class="backimg1 d-flex justify-content-between align-items-center">
+                        <h2>The History of Phipino</h2>
+                        <div class="linking">
+                            <a class="btn" href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="backimg2 d-flex justify-content-between align-items-center">
+                        <h2>Wilma Mumduya</h2>
+                        <div class="linking">
+                            <a class="btn" href="#">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container subscribe-section">
+            <div class="subscribe text-center">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-xl-6 col-lg-8 col-md-9 subscribe-area">
+                        <h3>Join Newsletter</h3>
+                        <p>Lorem started its journey with cast iron (CI) products in 1980. The initial main objective was to ensure pure water and affordable irrigation.</p>
+                        <form class="sub-form d-flex justify-content-center">
+                            <input class="sub" type="email" placeholder="Enter your email">
+                            <button class="subscribe-btn">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-bg">
+            <div class="footer-area">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-xl-4">
+                            <div class="footer-left">
+                                <div class="footer-logo">
+                                    <a href="index.html">
+                                        <img src="img/logo2_footer.png.webp">
+                                    </a>
+                                </div>
+                                <div class="footer-title">
+                                    <p>Get the breathing space now, and we’ll extend your term at the other end year for go.</p>
+                                </div>
+                                <div class="footer-social">
+                                    <a href="#">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5">
+                            <div class="footer-middle">
+                                <div class="book-category">
+                                    <h4 class="text-center">Book Category</h4>
+                                    <div class="d-flex justify-content-around align-items-center book-li">
+                                        <ul class="book-list text-left text-sm-center">
+                                            <a href="#">
+                                                <li>
+                                                    History
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Horror - Thriller
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Love Stories
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Science Fiction
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Business
+                                                </li>
+                                            </a>
+                                        </ul>
+                                        <ul class="book-list text-center">
+                                            <a href="#">
+                                                <li>
+                                                    Biography
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Astrology
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Digital Marketing
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Software Development
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Ecommerce
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3">
+                            <div class="footer-right">
+                                <div class="site-map">
+                                    <h4 class="text-center">Site Map</h4>
+                                    <div class="site-map-nav d-flex justify-content-center align-items-center">
+                                        <ul class="site-map-list text-center">
+                                            <a href="#">
+                                                <li>
+                                                    Home
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    About Us
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    FAQ
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Blog
+                                                </li>
+                                            </a>
+                                            <a href="#">
+                                                <li>
+                                                    Contact
+                                                </li>
+                                            </a>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center text-center copyright">
+                        <div class="col-xl-12">
+                            <div>
+                                Copyright ©2023 All rights reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="upward">
+        <i class="fa-solid fa-circle-arrow-up"></i>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
