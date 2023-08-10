@@ -1,0 +1,26 @@
+.categories-area {
+    background-image: url(img/h2_hero1.jpg.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.categories-caption h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.book-list-category {
+    border: 1px solid #ededed;
+}
+
+.book-list-category {
+    padding: 30px 20px 30px 30px;
+}
+
+.popularity {
+    text-align: right;
+}

@@ -19,3 +19,17 @@
 td {
     vertical-align: middle;
 }
+
+.product-count {
+    width: 100px;
+    height: 50px;
+}
+
+.product-count span {
+    cursor: pointer;
+    user-select: none;
+}
+
+.num {
+    pointer-events: none;
+}
