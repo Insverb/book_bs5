@@ -49,7 +49,7 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Categories</a>
+                            <a class="nav-link" href="categories.html">Categories</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -60,7 +60,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="login.html">Login</a></li>
-                                <li><a class="dropdown-item" href="#">Card</a></li>
+                                <li><a class="dropdown-item" href="cart.html">Cart</a></li>
                                 <li><a class="dropdown-item" href="#">Checkout</a></li>
                                 <li><a class="dropdown-item" href="#">Book Details</a></li>
                                 <li><a class="dropdown-item" href="#">Blog Details</a></li>
@@ -95,46 +95,61 @@
                 <div class="row">
                     <div class="col-xl-4 col-lg-4 col-md-6">
                         <div class="book-list-category">
-                            <div class="filter">
-                                <div>
+                            <div class="filter mb-4">
+                                <div class="mb-3">
                                     <h5>Filter by Genres</h5>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="history">
                                     <label for="history">History</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="horror">
                                     <label for="horror">Horror</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="drama">
                                     <label for="drama">Drama</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="comedy">
                                     <label for="comedy">Comedy</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="science">
                                     <label for="science">Science</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="biography">
                                     <label for="biography">Biography</label>
                                 </div>
                             </div>
-                            <div class="filter2">
-                                <div>
+                            <div class="filter2 mb-4">
+                                <div class="mb-3">
                                     <h5>Filter by Price</h5>
                                 </div>
-                                <div>
-                                    <input type="range">
+                                <div class="price-input mb-3">
+                                    <div class="field">
+                                        <span>Min</span>
+                                        <input type="number" class="input-min" value="2500">
+                                    </div>
+                                    <div class="separator">-</div>
+                                    <div class="field">
+                                        <span>Max</span>
+                                        <input type="number" class="input-max" value="7500">
+                                    </div>
+                                </div>
+                                <div class="slider">
+                                    <div class="progress"></div>
+                                </div>
+                                <div class="range-input">
+                                    <input type="range" class="range-min" min="0" max="10000" value="2500">
+                                    <input type="range" class="range-max" min="0" max="10000" value="7500">
                                 </div>
                             </div>
-                            <div class="filter3">
+                            <div class="filter3 mb-4">
                                 <div>
-                                    <select class="w-50" name="" id="">
+                                    <select class="w-50 w-75" name="" id="">
                                         <option value="all">Filter by Rating</option>
                                         <option value="5">5 Star</option>
                                         <option value="4">4 Star</option>
@@ -144,52 +159,52 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="filter4">
-                                <div>
+                            <div class="filter4 mb-4">
+                                <div class="mb-3">
                                     <h5>Filter by Publisher</h5>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="history">
                                     <label for="history">History</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'> 
                                     <input type="checkbox" name="" id="horror">
                                     <label for="horror">Horror</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="drama">
                                     <label for="drama">Drama</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="comedy">
                                     <label for="comedy">Comedy</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="science">
                                     <label for="science">Science</label>
                                 </div>
                             </div>
-                            <div class="filter5">
-                                <div>
+                            <div class="filter5 mb-4">
+                                <div class="mb-3">
                                     <h5>Filter by Author Name</h5>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="history">
                                     <label for="history">History</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="horror">
                                     <label for="horror">Horror</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="drama">
                                     <label for="drama">Drama</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="comedy">
                                     <label for="comedy">Comedy</label>
                                 </div>
-                                <div>
+                                <div class='mb-2'>
                                     <input type="checkbox" name="" id="science">
                                     <label for="science">Science</label>
                                 </div>
@@ -690,5 +705,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="upward.js"></script>
+    <script src="range.js"></script>
 </body>
 </html>

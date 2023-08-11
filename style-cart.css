@@ -16,18 +16,34 @@
     padding-right: 30px;
 }
 
+th {
+    text-align: center !important;
+}
+
 td {
     vertical-align: middle;
+    text-align: center !important;
 }
 
 .product-count {
-    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
+}
+
+.product-count input {
+    text-align: center;
+    border: none;
+    width: 100px;
 }
 
 .product-count span {
     cursor: pointer;
     user-select: none;
+    font-size: 20px;
+    text-align: center;
+    width: 10px;
 }
 
 .num {

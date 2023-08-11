@@ -1,4 +1,3 @@
-
 const swiper = new Swiper('.swiper1',  {
     speed: 600,
     spaceBetween: 100,
