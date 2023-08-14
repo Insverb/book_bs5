@@ -1,0 +1,55 @@
+.contact-area {
+    background-image: url(img/h2_hero2.jpg.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.contact-caption {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.map {
+    margin-top: 80px;
+}
+
+.boxed-btn {
+    margin-top: 10px;
+    color: #FF1616 !important;
+    background: #fff;
+    display: inline-block;
+    padding: 18px 44px;
+    font-family: "Playfair Display", serif;
+    font-size: 14px;
+    font-weight: 400;
+    border: 1px solid #FF1616;
+    text-align: center;
+}
+
+.boxed-btn:hover {
+    background: #FF1616;
+    color: #fff !important;
+    border: 1px solid #FF1616;
+}
+
+.contact-info {
+    color: #2a2a2a;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.contact-icon {
+    margin-right: 20px;
+}
+
+.contact-body h5 {
+    margin-bottom: 0;
+}
+
+.contact-body p {
+    margin-bottom: 0;
+}
+

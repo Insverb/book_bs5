@@ -1,0 +1,17 @@
+.about-area {
+    background-image: url(img/h2_hero2.jpg.webp);
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.about-caption {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.about-title {
+    margin-bottom: 20px;
+}
